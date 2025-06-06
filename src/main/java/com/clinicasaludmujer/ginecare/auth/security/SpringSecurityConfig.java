@@ -37,6 +37,8 @@ public class SpringSecurityConfig {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
+    ///SE AÑADE LA SEGUIRDAD PARA ACCEDER A LAS URL DE LOS ENDPOINTS EXPUESTOS
+
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
