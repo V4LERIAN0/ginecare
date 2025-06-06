@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class AuthDocController {
 
-    //Método para poder sutenticar el usuaario
     @Operation(summary = "Login y obtención de token JWT")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Login exitoso", content = @Content(schema = @Schema(implementation = LoginResponse.class))),
